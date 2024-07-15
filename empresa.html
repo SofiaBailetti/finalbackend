@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>P&P Tienda de mascotas</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+
+
+
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        marpaciarotti@gmail.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        291-5164704
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="product-list.html" class="nav-item nav-link">Productos</a>
+                            <div class="navbar-nav ml-auto">
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">La Empresa</a>
+                                    <div class="dropdown-menu">
+                                        <a href="about-us.html" class="dropdown-item">Sobre Nosotros</a>
+                                        <a href="contact.html" class="dropdown-item">Contáctanos</a>
+                                        <a href="politicas.html" class="dropdown-item">Políticas de Privacidad</a>
+                                        <a href="terminos-condiciones.html" class="dropdown-item">Términos y Condiciones</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mi cuenta</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                    <a href="registro.html" class="dropdown-item">Registro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Buscar">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->   
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active">Login</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+
+
+
+<!-- My Account Start -->
+<div class="my-account">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="dashboard-nav" data-toggle="pill" href="#dashboard-tab" role="tab"><i class="fa fa-tachometer-alt"></i> Sobre Nosotros</a>
+                    <a class="nav-link" id="orders-nav" data-toggle="pill" href="#orders-tab" role="tab"><i class="fa fa-shopping-bag"></i> Contáctanos</a>
+                    <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i class="fa fa-credit-card"></i> Políticas de Privacidad</a>
+                    <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i class="fa fa-map-marker-alt"></i> Términos y Condiciones</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-nav">
+                        <h1>Sobre Nosotros</h1>
+                        <p>Bienvenidos a P&P, donde el amor por las mascotas y la calidad se encuentran. Somos una empresa dedicada a crear collares y correas excepcionales para perros y gatos, diseñados con la máxima atención al detalle y fabricados con materiales de alta calidad. Nuestra misión es ofrecer productos que no solo sean seguros y duraderos, sino que también reflejen el estilo y la personalidad única de cada mascota.</p>
+                        <p>Nuestra Historia <br>
+                            La pasión por los animales nos llevó a fundar P&P en 2015. Como dueños de mascotas, entendemos la importancia de contar con accesorios confiables y cómodos para nuestros amigos de cuatro patas. Por eso, nos comprometimos a crear productos que no solo sean funcionales, sino también hermosos y únicos.</p>
+                        <p>Lo Que Nos Hace Únicos <br>
+                            Calidad Superior: Utilizamos solo los mejores materiales para asegurar que nuestros collares y correas sean duraderos y resistentes. <br>
+                            Diseño Personalizado: Ofrecemos una amplia gama de diseños y colores para que cada mascota pueda lucir un estilo que refleje su personalidad. <br>
+                            Comodidad y Seguridad: Nuestros productos están diseñados pensando en la comodidad y seguridad de tu mascota, asegurando un ajuste perfecto y seguro. <br>
+                            Amor por las Mascotas: Cada uno de nuestros productos es hecho con amor y dedicación, porque entendemos que tus mascotas son parte de tu familia. <br>
+                        </p>
+                        <p>Compromiso con la Comunidad <br>
+                            En P&P, también nos preocupamos por nuestra comunidad. Parte de nuestras ganancias se destina a apoyar refugios y organizaciones que trabajan incansablemente para el bienestar de los animales. Creemos en devolverle a la comunidad que nos ha apoyado desde el principio y ayudar a aquellos animales que aún buscan un hogar amoroso.</p>
+                        <h2>Gracias por elegir P&P. Estamos aquí para ayudarte a encontrar los mejores accesorios para tus mascotas, haciendo de cada paseo una experiencia segura y elegante.</h2>
+                    </div>
+
+                    <div class="tab-pane fade" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
+                        <!-- Contact Start -->
+                        <div class="contact">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="contact-info">
+                                            <h2>Nuestra Oficina</h2>
+                                            <h3><i class="fa fa-map-marker"></i> 123 Office, Los Angeles, CA, USA</h3>
+                                            <h3><i class="fa fa-envelope"></i> office@example.com</h3>
+                                            <h3><i class="fa fa-phone"></i> +123-456-7890</h3>
+                                            <div class="social">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="contact-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="Nombre" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="email" class="form-control" placeholder="Mail" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Motivo" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                                                </div>
+                                                <button class="btn" type="submit">Enviar Mensaje</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contact-map">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12451.686771735223!2d-62.27439210000001!3d-38.7196068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1719008695845!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact End -->
+                    </div>
+
+                    <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
+                        <h1>Políticas de Privacidad</h1>
+                        <p>En [Nombre de la Empresa], valoramos y respetamos tu privacidad. Nos comprometemos a proteger tus datos personales y a ser transparentes sobre cómo los recolectamos, utilizamos y compartimos. A continuación, te detallamos nuestras políticas de privacidad.</p>
+                        <p>Recopilamos varios tipos de información para ofrecer y mejorar nuestros servicios, incluyendo: <br>
+                            Información Personal: Nombre, dirección de correo electrónico, dirección de envío, número de teléfono y otros datos de contacto. <br>
+                            Información de Pago: Detalles de la tarjeta de crédito y otra información necesaria para procesar pagos. <br>
+                            Información de Uso: Datos sobre cómo interactúas con nuestro sitio web, productos y servicios. <br>
+                        </p>
+                        <p>Cómo Utilizamos tu Información <br>
+                            Utilizamos la información recopilada para: <br>
+                            - Procesar y gestionar pedidos: Asegurarnos de que recibas tus productos de manera rápida y segura. <br>
+                            - Mejorar nuestros productos y servicios: Analizar tus comentarios y comportamiento de compra para mejorar nuestras ofertas. <br>
+                            - Comunicaciones: Enviarte actualizaciones sobre tu pedido, promociones, noticias y otra información relevante, siempre con tu consentimiento previo. <br>
+                            - Seguridad: Proteger contra fraudes y mantener la seguridad de nuestro sitio web y servicios. <br>
+                        </p>
+                        <p>Compartir tu Información <br>
+                            Nos comprometemos a no vender, alquilar ni compartir tu información personal con terceros, salvo en las siguientes circunstancias: <br>
+                            - Proveedores de Servicios: Podemos compartir información con proveedores de servicios que nos ayudan a operar nuestro negocio, como procesadores de pagos y servicios de entrega. <br>
+                            - Cumplimiento Legal: Cuando sea requerido por ley o necesario para proteger nuestros derechos legales. <br>
+                            - Consentimiento: Con tu permiso explícito, compartiremos tu información con terceros para propósitos específicos. <br>
+                        </p>
+                        <p>Seguridad de los Datos <br>
+                            Implementamos medidas de seguridad para proteger tu información personal contra acceso no autorizado, alteración, divulgación o destrucción. Sin embargo, ten en cuenta que ningún método de transmisión por internet o almacenamiento electrónico es completamente seguro. <br>
+                        </p>
+                        <p>Tus Derechos <br>
+                            Tienes derecho a acceder, corregir o eliminar tu información personal. También puedes optar por no recibir nuestras comunicaciones promocionales en cualquier momento. Para ejercer estos derechos, contáctanos a través de [Correo Electrónico de Contacto]. <br>
+                        </p>
+                        <p>Cambios en la Política de Privacidad <br>
+                            Podemos actualizar nuestras políticas de privacidad periódicamente. Te notificaremos sobre cualquier cambio publicando la nueva política en nuestro sitio web. Te recomendamos revisar esta página regularmente para estar al tanto de nuestras prácticas de privacidad. <br>
+                        </p>
+                        <p>Contacto <br>
+                            Si tienes alguna pregunta o inquietud sobre nuestras políticas de privacidad, no dudes en contactarnos en: <br>
+                            Correo Electrónico: [Correo Electrónico de Contacto] <br>
+                            Dirección: [Dirección Física de la Empresa] <br>
+                            Teléfono: [Número de Teléfono de Contacto] <br>
+                        </p>
+                        <h2>Gracias por confiar en [Nombre de la Empresa]. Nos comprometemos a proteger tu privacidad y ofrecerte una experiencia de compra segura y satisfactoria.</h2>
+                    </div>
+
+                    <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
+                        <h1>Términos y Condiciones</h1>
+                        <p>Bienvenido a [Nombre de la Empresa]. Al utilizar nuestro sitio web y realizar compras con nosotros, aceptas cumplir con los siguientes términos y condiciones. Por favor, léelos cuidadosamente.</p>
+                        <p>1. Aceptación de los Términos <br>
+                            Al acceder y utilizar nuestro sitio web, aceptas estos Términos y Condiciones en su totalidad. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestro sitio. <br><br>
+                            2. Cambios en los Términos <br>
+                            Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor cuando se publiquen en nuestro sitio web. Te recomendamos revisar esta página regularmente para estar al tanto de cualquier cambio. <br><br>
+                            3. Uso del Sitio Web <br>
+                            Contenido: Todo el contenido del sitio web, incluyendo textos, imágenes, gráficos y logotipos, es propiedad de [Nombre de la Empresa] o de sus proveedores de contenido y está protegido por las leyes de derechos de autor. <br>
+                            Uso Permitido: Puedes utilizar nuestro sitio web solo para fines personales y no comerciales. No puedes copiar, modificar, distribuir, transmitir, mostrar, reproducir, publicar, licenciar ni crear trabajos derivados del contenido sin nuestro permiso previo por escrito. <br>
+                            Conducta Prohibida: No debes utilizar nuestro sitio web para ningún propósito ilegal o prohibido por estos Términos y Condiciones, incluyendo, entre otros, la transmisión de cualquier material que sea difamatorio, obsceno, ofensivo o infrinja los derechos de terceros. <br><br>
+                            4. Productos y Pedidos <br>
+                            Disponibilidad: Todos los productos están sujetos a disponibilidad y nos reservamos el derecho de limitar la cantidad de cualquier producto que ofrecemos. <br>
+                            Precios: Nos esforzamos por asegurar que todos los precios en nuestro sitio web sean precisos, pero no garantizamos la exactitud. Nos reservamos el derecho de corregir cualquier error de precio y de actualizar los precios en cualquier momento sin previo aviso. <br>
+                            Pedidos: Al realizar un pedido, aceptas proporcionar información veraz y precisa. Nos reservamos el derecho de rechazar o cancelar cualquier pedido por cualquier motivo, incluyendo sospechas de fraude o información incorrecta. <br><br>
+                            5. Envíos y Devoluciones <br>
+                            Envíos: Ofrecemos varios métodos de envío y los costos se calcularán al momento de la compra. Nos esforzamos por enviar los productos dentro del tiempo estimado, pero no somos responsables por retrasos fuera de nuestro control. <br>
+                            Devoluciones: Aceptamos devoluciones de productos no utilizados y en su estado original dentro de los [número de días] días posteriores a la recepción. Para más detalles, consulta nuestra Política de Devoluciones. <br><br>
+                            6. Limitación de Responsabilidad <br>
+                            [Nombre de la Empresa] no será responsable por daños directos, indirectos, incidentales, especiales o consecuentes que resulten del uso o la imposibilidad de uso de nuestros productos o sitio web, incluso si hemos sido advertidos de la posibilidad de tales daños. <br><br>
+                            7. Privacidad <br>
+                            Tu privacidad es importante para nosotros. Consulta nuestra Política de Privacidad para obtener detalles sobre cómo recopilamos, utilizamos y protegemos tu información personal. <br><br>
+                            8. Ley Aplicable <br>
+                            Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes de [País/Región], sin tener en cuenta sus disposiciones sobre conflictos de leyes. <br><br>
+                            9. Contacto <br>
+                            Si tienes alguna pregunta o inquietud sobre estos Términos y Condiciones, no dudes en contactarnos en: <br>
+                            Correo Electrónico: [Correo Electrónico de Contacto] <br>
+                            Dirección: [Dirección Física de la Empresa] <br>
+                            Teléfono: [Número de Teléfono de Contacto]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- My Account End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+ <!-- Brand Start -->
+ <div class="brand">
+    <div class="container-fluid">
+        <div class="brand-slider">
+            <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
+            <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
+            <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
+            <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
+            <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
+            <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<!-- Brand End -->
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Contáctanos</h2>
+                    <div class="contact-info">
+                        <p><i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA</p>
+                        <p><i class="fa fa-envelope"></i>email@example.com</p>
+                        <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Seguinos</h2>
+                    <div class="contact-info">
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Información</h2>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row payment align-items-center">
+            <div class="col-md-6">
+                <div class="payment-method">
+                    <h2>Aceptamos</h2>
+                    <img src="img/payment-method.png" alt="Payment Methods">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="payment-security">
+                    <h2>100% Seguro</h2>
+                    <img src="img/godaddy.svg" alt="GoDaddy Security">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>

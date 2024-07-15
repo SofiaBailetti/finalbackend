@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>P&P Tienda de mascotas</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        marpaciarotti@gmail.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        291-5164704
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="product-list.html" class="nav-item nav-link active">Productos</a>
+                            <div class="navbar-nav ml-auto">
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">La Empresa</a>
+                                    <div class="dropdown-menu">
+                                        <a href="about-us.html" class="dropdown-item">Sobre Nosotros</a>
+                                        <a href="contact.html" class="dropdown-item">Contáctanos</a>
+                                        <a href="politicas.html" class="dropdown-item">Políticas de Privacidad</a>
+                                        <a href="terminos-condiciones.html" class="dropdown-item">Términos y Condiciones</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mi cuenta</a>
+                                <div class="dropdown-menu">
+                                    <a href="login.html" class="dropdown-item">Login</a>
+                                    <a href="registro.html" class="dropdown-item">Registro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->   
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Buscar">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="wishlist.html" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span>(0)</span>
+                            </a>
+                            <a href="cart.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->  
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="product-list.html">Productos</a></li>
+                    <li class="breadcrumb-item active">Collares</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+
+        <!-- Product List Start -->
+        <div class="product-view">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="product-view-top">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="product-search">
+                                                <input type="email" value="Buscar">
+                                                <button><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-short">
+                                                <div class="dropdown">
+                                                    <div class="dropdown-toggle" data-toggle="dropdown">Ordenar por</div>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="#" class="dropdown-item">Nuevos</a>
+                                                        <a href="#" class="dropdown-item">Más vendidos</a>
+                                                        <a href="#" class="dropdown-item">Categoría</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-price-range">
+                                                <div class="dropdown">
+                                                    <div class="dropdown-toggle" data-toggle="dropdown">Rango de Precio</div>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="#" class="dropdown-item">$0 to $50</a>
+                                                        <a href="#" class="dropdown-item">$51 to $100</a>
+                                                        <a href="#" class="dropdown-item">$101 to $150</a>
+                                                        <a href="#" class="dropdown-item">$151 to $200</a>
+                                                        <a href="#" class="dropdown-item">$201 to $250</a>
+                                                        <a href="#" class="dropdown-item">$251 to $300</a>
+                                                        <a href="#" class="dropdown-item">$301 to $350</a>
+                                                        <a href="#" class="dropdown-item">$351 to $400</a>
+                                                        <a href="#" class="dropdown-item">$401 to $450</a>
+                                                        <a href="#" class="dropdown-item">$451 to $500</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°0</a>
+                                        <p>Polipropileno - 30cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar0.jpg" alt="collar 0">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>550</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°1</a>
+                                        <p>Polipropileno - 35cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar1.jpg" alt="collar 1">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>780</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°2</a>
+                                        <p>Polipropileno - 42cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar2.jpeg" alt="collar 2">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>850</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°3</a>
+                                        <p>Polipropileno - 45cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar3.jpg" alt="collar 3">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>1000</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°4</a>
+                                        <p>Polipropileno - 55cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar4.png" alt="collar 4">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>1050</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar N°5</a>
+                                        <p>Polipropileno - 65cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar5.jpg" alt="collar 5">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>1100</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar Gato</a>
+                                        <p>Polipropileno - 25cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collargato.jpeg" alt="collar gato">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>750</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar Gato Cuero</a>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collarcuerogato.jpg" alt="collar gato cuero">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>800</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar Reforzado Rojo N°4</a>
+                                        <p>Polipropileno - 60cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar-reforzadorojo.jpg" alt="collar reforzado rojo">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>3900</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar Reforzado Azul N°5</a>
+                                        <p>Polipropileno - 70cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar-reforzadoazul.jpg" alt="collar reforzado azul">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>4000</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collar Reforzado Negro N°6</a>
+                                        <p>Polipropileno - 80cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collar-reforzadonegro.jpg" alt="collar reforzado negro">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>4100</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Collares de Cuero</a>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/collarescuero.jpg" alt="collares cuero">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>5500</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Conjunto Alpino N°1</a>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/conjuntoalpino1.png" alt="conjunto alpino 1">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>4000</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Conjunto Alpino N°2</a>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/conjuntoalpino2.jpg" alt="conjunto alpino 2">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>4200</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Cazadora Alpina</a>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/cazadora-alpina.jpg" alt="cazadora alpina">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>4000</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Ahorque de Cinta</a>
+                                        <p>Polipropileno - 70cm.</p>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/collares/ahorque1.jpg" alt="ahorque">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>1800</h3>
+                                        <a class="btn" href="checkout.html"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                    
+                    <!-- Side Bar Start -->
+                    <div class="col-lg-4 sidebar">
+                        <div class="sidebar-widget category">
+                            <h2 class="title">Categorías</h2>
+                            <nav class="navbar bg-light">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mas_vendidos.html"><i class="fa fa-cash-register"></i>Más vendidos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ingresos.html"><i class="fa fa-plus-square"></i>Ingresos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="collares.html"><i class="fa fa-cat"></i>Collares</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="correas.html"><i class="fa fa-dog"></i>Correas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="bozales.html"><i class="fa fa-shield-dog"></i>Bozales</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pretales.html"><i class="fa fa-paw"></i>Pretales</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="linea_fantasia.html"><i class="fa fa-bone"></i>Línea Fantasía</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Side Bar End -->
+                </div>
+            </div>
+        </div>
+        <!-- Product List End -->  
+        
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container-fluid">
+                <div class="brand-slider">
+                    <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Contáctanos</h2>
+                    <div class="contact-info">
+                        <p><i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA</p>
+                        <p><i class="fa fa-envelope"></i>email@example.com</p>
+                        <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Seguinos</h2>
+                    <div class="contact-info">
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="footer-widget">
+                    <h2>Información Adicional</h2>
+                    <ul>
+                        <li><a href="about-us.html">Sobre Nosotros</a></li>
+                        <li><a href="politicas.html">Políticas de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Footer Bottom Start -->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</div>
+<!-- Footer Bottom End -->       
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>
